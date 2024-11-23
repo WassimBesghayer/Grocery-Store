@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
-  background-color: aqua;
 }
 nav ul {
   list-style: none;
@@ -31,7 +25,34 @@ nav .navBar-icons li {
 nav a {
   color: rgb(87, 87, 87);
   padding: 0 10px;
+  text-decoration: none;
 }
 nav a:hover {
   color: #436313;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+#carousel {
+  position: relative;
+  top: 0;
+  height: 500px;
+  width: 100%;
+}
+
+#partners {
+  position: relative;
+  top: 100px;
+  height: 90px;
+  background-color: aqua;
+}
+#partners .bubbles-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#partners .bubbles-group img {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
