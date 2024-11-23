@@ -1,0 +1,40 @@
+//  Initialization
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Navigation bar design
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: aqua;
+    ul { list-style: none; }
+    img {
+        height: 70px;
+        width: 70px;
+    }
+    // .navBar-links {
+    //     // width: 80%;
+        
+    #sub-navbar-1 {
+        display: flex;
+        justify-content: space-between;
+        }
+    .navBar-icons {
+        display: flex;
+        justify-content: space-between;
+        li {padding: 0 15px;}
+    }
+    a {
+        color: rgb(87, 87, 87);
+        padding: 0 10px;
+    }
+    a:hover{
+        color: #436313;
+    }
+}
+
+

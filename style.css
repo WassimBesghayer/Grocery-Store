@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: aqua;
+}
+nav ul {
+  list-style: none;
+}
+nav img {
+  height: 70px;
+  width: 70px;
+}
+nav #sub-navbar-1 {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navBar-icons {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navBar-icons li {
+  padding: 0 15px;
+}
+nav a {
+  color: rgb(87, 87, 87);
+  padding: 0 10px;
+}
+nav a:hover {
+  color: #436313;
+}/*# sourceMappingURL=style.css.map */
