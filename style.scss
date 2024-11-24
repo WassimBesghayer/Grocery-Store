@@ -10,6 +10,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    height: 110px;
     ul { list-style: none; }
     img {
         height: 70px;
@@ -33,11 +34,33 @@ nav {
         text-decoration: none;
     }
     a:hover{
-        color: #436313;
+        color: #0bdf03;
         text-decoration: dotted;
     }
 }
 
+// Dropdown list styling
+.dropdown-list:hover .dropdown-content {
+    display: block; /* Show content on hover */
+}
+.dropdown-content {
+    position: absolute; /* Position outside normal flow : in order to not interfering with other semantic tags*/
+    display: none; /* Hidden by default */
+    background-color: #f9f9f9; /* Ensure background color is set */
+    // box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure it appears above other elements */
+    transition: max-height 0.7s ease-in-out; /* Smooth roll down effect */
+    padding: 10px 12px;
+    li { padding: 5px 0; }  /* giving some space between lines*/
+}
+.dropdown-content a:hover {   /* giving color when we hover on an option */
+    color: #0bdf03;
+}
+
+// Search bar
+#search:hover form{
+    display: inline;
+}
 
 // carousel
 #carousel {
