@@ -58,16 +58,71 @@ nav {
 }
 
 // Search bar
-#search:hover form{
-    display: inline;
-}
+    /* Container for the search bar */
+    .search-container {
+        position: relative;
+        display: inline;
+    }
+  
+      /* Magnifying glass icon */
+    .search-icon {
+        font-size: 24px;
+        cursor: pointer;
+    }
+  
+      /* Search bar and button container */
+    .search-bar {
+        position: absolute;
+        top: 25;
+        left: 40px; /* Leave space for the icon */
+        display: flex;
+        align-items: center;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 0; /* Hidden by default */
+        transition: max-width 0.3s ease-in-out, padding 0.3s ease-in-out;
+        z-index: 1;
+    }
+  
+      /* Hover effect to reveal search bar */
+    .search-container:hover .search-bar {
+        max-width: 300px; /* Expand to full width */
+        padding: 5px 10px; /* Add padding */
+    }
+  
+      /* Input field inside the search bar */
+    .search-bar input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        flex: 1;
+        padding: 5px;
+    }
+  
+      /* Search button */
+    .search-bar #button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+  
+    .search-bar button:hover {
+        background-color: #0056b3;
+    }
 
 // carousel
 #carousel {
     position: relative;
     top: 0;
-    height: 500px;
+    height: 600px;
     width: 100%;
+    img { height: 500px; }
 }
 
 // Partners
