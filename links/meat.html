@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./media/images/icons/website icon.jpg">
+    <link rel="stylesheet" type="text/css" href="./sub-style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../media/website icon.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <title>Grocery Store</title>
+    <script src="../main.js"></script>
+    <title>Charcuterie</title>
 </head>
 
 <body>
     <nav>
-        <a href="../index.html" title="Serving you gladly 😊"><img src="../media/icons/website icon.jpg" alt="fix this !"></a>
+        <a href="../index.html" title="Serving you gladly 😊"><img src="../media/website icon.jpg" alt="fix this !"></a>
         
         <ul id="sub-navbar-1">
             <li><a href="./links/discounts.html">Discounts</a></li>
@@ -21,15 +22,15 @@
             <li class="dropdown-list"><a href="" title="See what we can supply 🧺">Shopping</a>
                 <form>
                     <ul class="dropdown-content">
-                        <li><a href="./links/vegetables.html" target="_blank" title="">🥬 Vegetables</a></li>
-                        <li><a href="./links/fruits.html" target="_blank" title="">🍉 Fruits</a></li>
-                        <li><a href="./links/dairy.html" target="_blank" title="">🥛 Dairy</a></li>
-                        <li><a href="./links/meat.html" target="_blank" title="">🥩 Meat</a></li</li>
-                        <li><a href="./links/baking.html" target="_blank" title="">🥖 Baking & Pastry</a></li>
-                        <li><a href="./links/drinks.html" target="_blank" title="">🧋 Drinks</a></li>
-                        <li><a href="./links/misc.html" target="_blank" title="">🧻 Cleaning & Hygene</a></li>
-                        <li><a href="./links/misc.html" target="_blank" title="">🪥 Body Care</a></li>
-                        <li><a href="./links/misc.html" target="_blank" title="">Miscellaneous</a></li>
+                        <li><a href="vegetables.html" target="_blank" title="">🥬 Vegetables</a></li>
+                        <li><a href="fruits.html" target="_blank" title="">🍉 Fruits</a></li>
+                        <li><a href="dairy.html" target="_blank" title="">🥛 Dairy</a></li>
+                        <li><a href="meat.html" target="_blank" title="">🥩 Meat</a></li</li>
+                        <li><a href="baking.html" target="_blank" title="">🥖 Baking & Pastry</a></li>
+                        <li><a href="drinks.html" target="_blank" title="">🧋 Drinks</a></li>
+                        <li><a href="cleaning.html" target="_blank" title="">🧻 Cleaning & Hygene</a></li>
+                        <li><a href="body care.html" target="_blank" title="">🪥 Body Care</a></li>
+                        <li><a href="misc.html" target="_blank" title="">Miscellaneous</a></li>
                     </ul>
                 </form>
             </li>
@@ -52,40 +53,66 @@
 
     <main>
 
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ut deleniti corrupti voluptatum aspernatur, molestias doloremque molestiae consectetur, iste ab dolores consequatur itaque eaque excepturi mollitia provident minima at magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ut deleniti corrupti voluptatum aspernatur, molestias doloremque molestiae consectetur, iste ab dolores consequatur itaque eaque excepturi mollitia provident minima at magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ut deleniti corrupti voluptatum aspernatur, molestias doloremque molestiae consectetur, iste ab dolores consequatur itaque eaque excepturi mollitia provident minima at magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ut deleniti corrupti voluptatum aspernatur, molestias doloremque molestiae consectetur, iste ab dolores consequatur itaque eaque excepturi mollitia provident minima at magnam.</p>
+        <section class="products">
+            <div class="card" style="width: 18rem;">
+                <img src="../media/images/poultry/cuisse-poulet.jpg" class="card-img-top" alt="fix this error!">
+                <div class="card-body">
+                    <h5 class="card-title">chicken thigh</h5>
+                    <p class="card-text">15 $</p>
+                    <a href="#" class="btn">...</a>
+                    <a href="#" class="btn">🔎</a>
+                    <a href="#" class="btn">🧺</a>
+                    <div>
+                        <button class="minus">-</button>
+                        <input classs="counter" type="text" value="0">
+                        <button class="plus" >+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../media/images/poultry/blanc de poulet.jpg" class="card-img-top" alt="fix this error!">
+                <div class="card-body">
+                    <h5 class="card-title">chicken breast</h5>
+                    <p class="card-text">16 $</p>
+                    <a href="#" class="btn">...</a>
+                    <a href="#" class="btn">🔎</a>
+                    <a href="#" class="btn">🧺</a>
+                    <div>
+                        <button class="minus">-</button>
+                        <input classs="counter" type="text" value="0">
+                        <button class="plus" >+</button>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../media/images/poultry/poulet.jpg" class="card-img-top" alt="fix this error!">
+                <div class="card-body">
+                    <h5 class="card-title">chicken</h5>
+                    <p class="card-text">25 $</p>
+                    <a href="#" class="btn">...</a>
+                    <a href="#" class="btn">🔎</a>
+                    <a href="#" class="btn">🧺</a>
+                    <div>
+                        <button class="minus">-</button>
+                        <input classs="counter" type="text" value="0">
+                        <button class="plus" >+</button>
+                       
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <button class="minus">-</button>
-            <input class="counter" type="text" value="0">
-            <button class="plus" onclick="increment()">+</button>
-            <script src="../main.js">
-                // var counter=document.getElementsByClassName("counter");
-                // var plus=document.getElementsByClassName("plus");
-                // var minus=document.getElementsByClassName("minus");
-
-
-                // // adding on clicking
-                // // plus.addEventListener("click",function() {counter.value++})
-                // function increment() {
-                //     counter.value++
-                // }
-
-                // // removing on clicking
-                // minus.addEventListener("click",function() {
-                //     if(counter.value > 0)
-                //         counter.value--})
-            </script>
-        </section>
+      
 
     </main>
 
 
+    <script src="../main.js">
 
+    </script>
 </body>
 
 <footer>

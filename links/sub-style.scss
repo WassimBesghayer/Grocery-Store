@@ -2,16 +2,30 @@ main {
     margin: 30px 60px;
 }
 
-.poultry {
+.products {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .card {
-    padding: 0 20px;
+    margin: 20px 0;
+    padding: 10px 20px;
     img {
         width: 240px;
         height: 220px;
     }
+    
+}
+.card-body {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the RGB values and alpha for transparency */
+}
+.btn {
+    position: relative;
+    top: -150px;
+    left: 50px;
+    visibility: hidden; /* Initially hidden */
+}
+.card:hover .btn {
+    visibility: visible; /* Visible on hover */
 }
