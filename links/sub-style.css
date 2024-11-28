@@ -21,13 +21,24 @@ main {
   background-color: rgba(0, 0, 0, 0.1); /* Adjust the RGB values and alpha for transparency */
 }
 
-.btn {
+.btn, .btn-container {
   position: relative;
   top: -150px;
   left: 50px;
   visibility: hidden; /* Initially hidden */
+  color: white;
 }
 
-.card:hover .btn {
+.card:hover .btn, .btn-container {
   visibility: visible; /* Visible on hover */
+}
+
+.btn-container {
+  background-color: blue;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: -140px;
+  right: -40px;
 }/*# sourceMappingURL=sub-style.css.map */
