@@ -15,6 +15,7 @@ main {
 .card img {
   width: 240px;
   height: 220px;
+  margin-bottom: 50px;
 }
 
 .card-body {
@@ -23,7 +24,7 @@ main {
 
 .btn, .btn-container {
   position: relative;
-  top: -150px;
+  top: -130px;
   left: 50px;
   visibility: hidden; /* Initially hidden */
   color: white;
@@ -41,4 +42,35 @@ main {
   position: relative;
   top: -140px;
   right: -40px;
+}
+
+.btn2 {
+  background-color: grey;
+  padding: 5px 8px;
+  border-radius: 50%;
+  color: white !important;
+}
+
+#opt {
+  display: flex;
+  justify-content: space-around;
+visibility: hidden;
+width:100%;
+margin-top:20px;
+background-color:red;
 }/*# sourceMappingURL=sub-style.css.map */
+
+
+#show{
+  visibility:visible;
+  display: flex;
+  justify-content: center;
+
+width:100%;
+margin-top:10px;
+
+}
+
+#show a{
+  margin:5px;
+}
