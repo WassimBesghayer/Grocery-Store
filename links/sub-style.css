@@ -1,6 +1,5 @@
-main {
-  margin: 30px 60px;
-}
+body { background-color: antiquewhite !important; }
+main { margin: 30px 60px; }
 
 .products {
   display: flex;
